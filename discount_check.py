@@ -451,7 +451,6 @@ class FetchOptionData:
             j.kill()
 
           self.index_stack(result)
-          time.sleep(1)
           clear_output(wait=True)
 
         except KeyboardInterrupt:
@@ -463,7 +462,6 @@ class FetchOptionData:
         try:
           result = [self.smap(f) for f in functions]
           self.index_stack(result)
-          time.sleep(1)
           clear_output(wait=True)
 
         except KeyboardInterrupt:
